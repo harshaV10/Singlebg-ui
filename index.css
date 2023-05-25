@@ -1,0 +1,260 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 99vw;
+}
+
+body {
+    width: 99vw;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    width: 99vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    align-items: center;
+}
+.nav-logo-cont {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 200px;
+}
+
+.nav-options ul {
+    display: flex;
+}
+
+.nav-options ul li {
+    list-style: none;
+    margin-left: 30px;
+    color: #22205F;
+    font-weight: 500;
+}
+
+.nav-buttons button {
+    margin-right: 30px;
+    padding: 12px 30px;
+    /* height: 35px; */
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    border: none;
+    background-color: #22205F;
+    color: white;
+}
+
+
+/* home page screen */
+
+.home-page {
+    width: 99vw;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.home-about {
+    height: 30rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.home-about h1 {
+    width: 90%;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #22205F;
+}
+
+.home-about h1 span {
+    display: block;
+}
+
+.para-one {
+    width: 90%;
+    font-size: 25px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.home-about button {
+    width: 250px;
+    padding: 10px 12px;
+    background-color: #22205F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.para-two {
+    width: 90%;
+    color: #555;
+    margin-top: 15px;
+}
+
+.home-image {
+    width: 50%;
+}
+
+.home-image img {
+    width: 90%;
+}
+
+.image-cont {
+    width: 95vw;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-cont h1 {
+    width: 70%;
+    text-align: center;
+    color: #22205F;
+}
+
+.image-cont p {
+    width: 65%;
+    text-align: center;
+    color: #555;
+    line-height: 25px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.image-slider {
+    width: 95vw;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.image-slider img {
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0px 10px 25px -12px grey;
+    margin-bottom: 30px;
+}
+
+.offer-cont {
+    width: 96vw;
+    margin-top: 30px;
+    justify-self: center;
+    margin-left: 30px;
+}
+
+.offer-cont h3 {
+    color: #22205F;
+}
+
+.offer-box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offer-box {
+    width: 330px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.offer-box img {
+    width: 40px;
+}
+
+.offer-box h4 {
+    color: #22205F;
+    margin: 10px 0;
+}
+
+.offer-box p {
+    font-size: 15px;
+    color: #555;
+}
+
+
+
+.resp-nav {
+    display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+    .nav-options {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-image {
+        display: none;
+    }
+    .home-about {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .nav-buttons{
+        display: none;
+    }
+    .resp-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ham-menu {
+        width: 30px;
+        height: 30px;
+        background-color: #22205F;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .resp-nav-buttons button {
+        padding: 10px 19px;
+        background-color: #22205F;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 20px
+    }
+
+}
